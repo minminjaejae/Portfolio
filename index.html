@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="portfolio.css" />
+    <title>portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="headercontainer">
+        <ul>
+          <li><a href="#">Main</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Project</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Skill</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">About me</a></li>
+        </ul>
+      </div>
+      <h1>안녕하세요. <br />신입웹퍼블리셔<br />김민재입니다.</h1>
+      <p>Learn More About minjae’s portfolio</p>
+      <span><a href="#">DOWN -></a></span>
+    </header>
+    <main>
+      <h1>SKILLS</h1>
+      <div class="skillbox swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <h2>HTML5 & CSS3</h2>
+            <p>→ Flex, Grid, Position를 사용 가능</p>
+            <p>→ 미디어 쿼리를 이용한 반응형 웹 제작</p>
+            <p>→ 간단한 애니메이션 구현</p>
+          </div>
+          <div class="swiper-slide box">
+            <h2>JS & jQuery</h2>
+            <p>→ Scroll, Mouse 이벤트 제어</p>
+            <p>→ 자바스크립트 ES6+</p>
+            <p>→ SetInterval, SetTimeout 비동기 함수 사용</p>
+            <p>→ 다양한 Plugin 사용</p>
+          </div>
+          <div class="swiper-slide box">
+            <h2>Git/GitHub</h2>
+            <p>→ Git Bash 사용</p>
+            <p>→ GitHub Organization을 이용한 팀 프로젝트 진행</p>
+            <p>→ GitHub을 이용한 버전 관리 & 웹사이트 호스팅</p>
+          </div>
+          <div class="swiper-slide box">
+            <h2>Design</h2>
+            <p>→ Design Tool: 포토샵 & 일러스트 / Figma</p>
+            <p>→ Figma를 이용한 팀 프로젝트</p>
+            <p>→ 간단한 이미지 편집 및 수정</p>
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Navigation -->
+      </div>
+    </main>
+    <div class="ProjectPage">
+      <h1>PROJECT</h1>
+      <div class="pro">
+        <div class="pro1">
+          <img class="phone" src="./images/Group 19089.svg" alt="img" />
+          <img class="logo" src="./images/embl01.png" alt="img" />
+          <h1>독서기록앱</h1>
+          <h4>2023/00/00 ~ 2023/00/00</h4>
+          <p>리액트</p>
+          <p>리액트</p>
+          <p>리액트</p>
+          <p>리액트</p>
+          <a href="#"
+            ><img class="view" src="./images/btn_view_more.png" alt="btn"
+          /></a>
+        </div>
+        <div class="pro2">
+          <img class="phone" src="./images/Group 19089.svg" alt="img" />
+          <img class="logo" src="./images/embl01.png" alt="img" />
+          <h1>독서기록앱</h1>
+          <h4>2023/00/00 ~ 2023/00/00</h4>
+          <p>리액트</p>
+          <p>리액트</p>
+          <p>리액트</p>
+          <p>리액트</p>
+          <a href="#"
+            ><img class="view" src="./images/btn_view_more.png" alt="btn"
+          /></a>
+        </div>
+        <div class="pro3">
+          <img class="phone" src="./images/Group 19089.svg" alt="img" />
+          <img class="logo" src="./images/embl01.png" alt="img" />
+          <h1>독서기록앱</h1>
+          <h4>2023/00/00 ~ 2023/00/00</h4>
+          <p>리액트</p>
+          <p>리액트</p>
+          <p>리액트</p>
+          <p>리액트</p>
+          <a href="#"
+            ><img class="view" src="./images/btn_view_more.png" alt="btn"
+          /></a>
+        </div>
+        <div class="pro4">
+          <img class="phone" src="./images/Group 19089.svg" alt="img" />
+          <img class="logo" src="./images/embl01.png" alt="img" />
+          <h1>독서기록앱</h1>
+          <h4>2023/00/00 ~ 2023/00/00</h4>
+          <p>리액트</p>
+          <p>리액트</p>
+          <p>리액트</p>
+          <p>리액트</p>
+          <a href="#"
+            ><img class="view" src="./images/btn_view_more.png" alt="btn"
+          /></a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <h1>About Me</h1>
+    </footer>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 1,
+        spaceBetween: 15,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>
