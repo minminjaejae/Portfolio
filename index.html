@@ -8,7 +8,8 @@
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="stylesheet" href="portfolioM.css" />
+    <link rel="stylesheet" href="portfolioPc.css" />
     <title>portfolio</title>
   </head>
   <body>
@@ -16,25 +17,23 @@
       <div class="headercontainer">
         <ul>
           <li><a href="#">Main</a></li>
-        </ul>
-        <ul>
-          <li><a href="#">Project</a></li>
-        </ul>
-        <ul>
-          <li><a href="#">Skill</a></li>
-        </ul>
-        <ul>
-          <li><a href="#">About me</a></li>
+
+          <li><a href="#ProjectPage">Project</a></li>
+
+          <li><a href="#ski">Skill</a></li>
+
+          <li><a href="#About">About me</a></li>
         </ul>
       </div>
       <h1>안녕하세요. <br />신입웹퍼블리셔<br />김민재입니다.</h1>
       <p>Learn More About minjae’s portfolio</p>
-      <span><a href="#">DOWN -></a></span>
+      <span><a href="#ski">DOWN -></a></span>
     </header>
-    <main>
+    <main id="ski">
       <h1>SKILLS</h1>
       <div class="skillbox swiper-container">
         <div class="swiper-wrapper">
+          <img class="skilcon" src="./images/Group 19010.svg" alt="con" />
           <div class="swiper-slide box">
             <h2>HTML5 & CSS3</h2>
             <p>→ Flex, Grid, Position를 사용 가능</p>
@@ -66,7 +65,7 @@
         <!-- Add Navigation -->
       </div>
     </main>
-    <div class="ProjectPage">
+    <div class="ProjectPage" id="ProjectPage">
       <h1>PROJECT</h1>
       <div class="pro">
         <div class="pro1">
@@ -84,7 +83,7 @@
         </div>
         <div class="pro2">
           <img class="phone" src="./images/Group 19089.svg" alt="img" />
-          <img class="logo" src="./images/embl01.png" alt="img" />
+          <img class="logo" src="./images/embl02.png" alt="img" />
           <h1>독서기록앱</h1>
           <h4>2023/00/00 ~ 2023/00/00</h4>
           <p>리액트</p>
@@ -97,7 +96,7 @@
         </div>
         <div class="pro3">
           <img class="phone" src="./images/Group 19089.svg" alt="img" />
-          <img class="logo" src="./images/embl01.png" alt="img" />
+          <img class="logo" src="./images/embl03.png" alt="img" />
           <h1>독서기록앱</h1>
           <h4>2023/00/00 ~ 2023/00/00</h4>
           <p>리액트</p>
@@ -110,7 +109,7 @@
         </div>
         <div class="pro4">
           <img class="phone" src="./images/Group 19089.svg" alt="img" />
-          <img class="logo" src="./images/embl01.png" alt="img" />
+          <img class="logo" src="./images/embl04.png" alt="img" />
           <h1>독서기록앱</h1>
           <h4>2023/00/00 ~ 2023/00/00</h4>
           <p>리액트</p>
@@ -123,8 +122,12 @@
         </div>
       </div>
     </div>
-    <footer>
+    <footer id="About">
       <h1>About Me</h1>
+      <img src="./images/kim.jpg" alt="kim" />
+      <h2>이름 : 김민재</h2>
+      <h2>생년 : 1999. 09. 15</h2>
+      <h2>이메일 : gop7128@naver.com</h2>
     </footer>
     <script>
       var swiper = new Swiper(".swiper-container", {
@@ -139,6 +142,33 @@
           clickable: true,
         },
       });
+
+      var projectPage = document.getElementById("ProjectPage");
+      var pro1 = document.querySelector(".pro1");
+
+      var observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              console.log("pro1이 화면에 나타남!");
+
+              // translateX 값 변경
+              pro1.style.transform = "translateX(0)";
+
+              // opacity 값 변경
+              pro1.style.opacity = "1";
+            }
+          });
+        },
+        { threshold: 0.5 } // 화면에 50% 이상 나타날 때 이벤트 발생
+      );
+
+      function handleScroll() {
+        observer.observe(pro1);
+        requestAnimationFrame(handleScroll);
+      }
+
+      window.addEventListener("scroll", handleScroll);
     </script>
   </body>
 </html>

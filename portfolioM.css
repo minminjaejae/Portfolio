@@ -1,0 +1,185 @@
+@charset "utf-8";
+@media (width < 600px) {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  header {
+    position: relative;
+    height: 80vh;
+  }
+  header ul {
+    position: fixed;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    z-index: 9999;
+  }
+  header ul li {
+    margin-left: 20px;
+  }
+  header ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.8rem;
+    right: 10px;
+    z-index: 999;
+    display: block;
+  }
+  .headercontainer {
+    display: flex;
+    justify-content: right;
+    margin-right: 20px;
+  }
+  header h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-left: 30px;
+    position: absolute;
+    top: 100px;
+  }
+  header p {
+    font-size: 0.8rem;
+    color: #333;
+    position: absolute;
+    font-weight: bold;
+    top: 250px;
+    left: 130px;
+  }
+  header span a {
+    text-decoration: none;
+    position: absolute;
+    color: #333;
+    font-size: 1.25rem;
+    rotate: 90deg;
+    font-weight: bold;
+    font-size: 0.7rem;
+    top: 330px;
+    right: 1px;
+  }
+  main {
+    position: relative;
+    overflow: hidden;
+    height: 80vh;
+  }
+  main h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-left: 10px;
+    position: absolute;
+    margin-top: 0;
+  }
+  .skilcon {
+    width: 50px;
+    position: absolute;
+    z-index: 1;
+    left: -20px;
+    top: -30px;
+  }
+  main .skillbox {
+    width: 40%;
+    margin: 40px auto;
+    position: relative;
+    height: 300px;
+    top: 50px;
+  }
+  main .swiper-slide {
+    border-top: 6px solid #666;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    background-color: bisque;
+  }
+  main .swiper-slide h2 {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  main .swiper-slide p {
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #666;
+  }
+  .ProjectPage {
+    position: relative;
+    height: 300vh;
+  }
+
+  .ProjectPage .pro h1 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  .ProjectPage .pro h4 {
+    font-size: 0.8rem;
+    color: #2b9df2;
+  }
+  .ProjectPage .pro p {
+    font-size: 0.7rem;
+    color: #666;
+  }
+
+  .ProjectPage .logo {
+    width: 120px;
+  }
+  .ProjectPage .phone {
+    width: 40%;
+  }
+  .ProjectPage .pro1 .phone {
+    position: absolute;
+    left: 200px;
+  }
+
+  .ProjectPage h1 {
+    margin-left: 10px;
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 200px;
+  }
+
+  .ProjectPage .pro2 {
+    position: absolute;
+    top: 800px;
+  }
+
+  .ProjectPage .pro2 .phone {
+    position: absolute;
+    width: 150px;
+    left: 200px;
+  }
+  .ProjectPage .pro3 {
+    position: absolute;
+    top: 1320px;
+  }
+  .ProjectPage .pro3 .phone {
+    position: absolute;
+    width: 150px;
+    left: 200px;
+  }
+
+  .ProjectPage .pro4 {
+    position: absolute;
+    top: 1800px;
+  }
+  .ProjectPage .pro4 .phone {
+    position: absolute;
+    width: 150px;
+    left: 200px;
+  }
+  footer {
+    height: 80vh;
+    margin: 0;
+  }
+  footer h1 {
+    font-size: 3rem;
+    margin-left: 10px;
+  }
+  footer img {
+    width: 300px;
+    margin-left: 40px;
+  }
+  footer h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+  }
+}
