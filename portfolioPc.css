@@ -26,6 +26,9 @@
     z-index: 999;
     display: block;
   }
+  header ul li a:hover {
+    border-bottom: 2px solid #333;
+  }
   .headercontainer {
     display: flex;
     justify-content: right;
@@ -52,7 +55,12 @@
     rotate: 90deg;
     font-weight: bold;
     right: 5vw;
-    bottom: -80px;
+    display: block;
+    padding: auto;
+  }
+  header span a:hover {
+    transform: translateX(30px);
+    transition: 1s;
   }
   main {
     position: relative;
@@ -62,28 +70,31 @@
   main h1 {
     font-size: 6.25rem;
     color: #333;
-    margin-left: 50px;
     position: absolute;
+    padding: 120px 90px 200px;
+    background-color: #fff;
+    top: -30px;
+    z-index: 991;
+    height: 500px;
   }
   .skilcon {
     width: 50px;
     position: absolute;
     z-index: 1;
-    bottom: 370px;
-    left: -20px;
+    top: -20px;
   }
   main .skillbox {
-    width: 40%;
+    top: 20px;
+    width: 400px;
     margin: 40px auto;
     position: relative;
-    height: 400px;
+    height: 600px;
   }
   main .swiper-slide {
     border-top: 6px solid #666;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
-    background-color: bisque;
   }
   main .swiper-slide h2 {
     font-size: 3.75rem;
@@ -93,6 +104,8 @@
     font-size: 1.125rem;
     font-weight: bold;
     color: #666;
+    text-align: left;
+    margin-left: 20px;
   }
   .ProjectPage {
     position: relative;
@@ -100,27 +113,27 @@
   }
 
   .ProjectPage .pro h1 {
-    font-size: 5rem;
+    font-size: 3rem;
+    margin-top: 30px;
     margin: 0;
   }
   .ProjectPage .pro h4 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #2b9df2;
   }
   .ProjectPage .pro p {
-    font-size: 1.125rem;
+    font-size: 1rem;
     color: #666;
   }
 
   .ProjectPage .logo {
     width: 150px;
+    margin-bottom: 30px;
   }
   .ProjectPage .phone {
     width: 300px;
-  }
-  .ProjectPage .pro1 .phone {
     position: absolute;
-    right: -400px;
+    right: -600px;
   }
 
   .ProjectPage h1 {
@@ -131,10 +144,13 @@
   }
   .ProjectPage .pro1 {
     position: absolute;
-    left: 500px;
+    left: 1200px;
     transition: 0.5s;
     opacity: 0;
     transform: translateX(100px);
+  }
+  .ProjectPage .pro1 .phone {
+    right: 700px;
   }
 
   .ProjectPage .pro2 {
@@ -143,18 +159,13 @@
     left: 500px;
   }
 
-  .ProjectPage .pro2 .phone {
-    position: absolute;
-    right: -400px;
-  }
   .ProjectPage .pro3 {
     position: absolute;
     top: 2100px;
-    left: 500px;
+    left: 1200px;
   }
   .ProjectPage .pro3 .phone {
-    position: absolute;
-    right: -400px;
+    right: 700px;
   }
 
   .ProjectPage .pro4 {
@@ -162,10 +173,11 @@
     top: 3000px;
     left: 500px;
   }
-  .ProjectPage .pro4 .phone {
-    position: absolute;
-    right: -400px;
+  .view:hover {
+    transform: rotate(30deg);
+    transition: 0.5s;
   }
+
   footer {
     height: 80vh;
     margin: 0;
@@ -176,6 +188,7 @@
   }
   footer img {
     margin-left: 300px;
+    border-radius: 50%;
   }
   footer h2 {
     font-size: 3rem;
