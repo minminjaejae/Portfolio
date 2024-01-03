@@ -25,7 +25,9 @@
           <li><a href="#About">About me</a></li>
         </ul>
       </div>
-      <h1>안녕하세요. <br />신입웹퍼블리셔<br />김민재입니다.</h1>
+      <h1 class="typing-effect">
+        안녕하세요. <br />신입웹퍼블리셔<br />김민재입니다.
+      </h1>
       <p>Learn More About minjae’s portfolio</p>
       <span><a href="#ski">DOWN -></a></span>
     </header>
@@ -74,7 +76,9 @@
       <h1>PROJECT</h1>
       <div class="pro">
         <div class="pro1">
-          <img class="phone" src="./images/Group 19089.svg" alt="img" />
+          <a href="#"
+            ><img class="phone" src="./images/Group 19089.svg" alt="img"
+          /></a>
           <img class="logo" src="./images/embl01.png" alt="img" />
           <h1>독서기록앱</h1>
           <h4>2023/00/00 ~ 2023/00/00</h4>
@@ -87,7 +91,9 @@
           /></a>
         </div>
         <div class="pro2">
-          <img class="phone" src="./images/Group 19089.svg" alt="img" />
+          <a href="#"
+            ><img class="phone" src="./images/Group 19089.svg" alt="img"
+          /></a>
           <img class="logo" src="./images/embl02.png" alt="img" />
           <h1>독서기록앱</h1>
           <h4>2023/00/00 ~ 2023/00/00</h4>
@@ -100,7 +106,9 @@
           /></a>
         </div>
         <div class="pro3">
-          <img class="phone" src="./images/Group 19089.svg" alt="img" />
+          <a href="#"
+            ><img class="phone" src="./images/Group 19089.svg" alt="img"
+          /></a>
           <img class="logo" src="./images/embl03.png" alt="img" />
           <h1>독서기록앱</h1>
           <h4>2023/00/00 ~ 2023/00/00</h4>
@@ -113,7 +121,9 @@
           /></a>
         </div>
         <div class="pro4">
-          <img class="phone" src="./images/Group 19089.svg" alt="img" />
+          <a href="#"
+            ><img class="phone" src="./images/Group 19089.svg" alt="img"
+          /></a>
           <img class="logo" src="./images/embl04.png" alt="img" />
           <h1>독서기록앱</h1>
           <h4>2023/00/00 ~ 2023/00/00</h4>
@@ -175,6 +185,14 @@
       }
 
       window.addEventListener("scroll", handleScroll);
+      document.addEventListener("DOMContentLoaded", function () {
+        var typingElement = document.querySelector(".typing-effect");
+
+        // 페이지 로딩 후 1초 뒤에 애니메이션 클래스 추가
+        setTimeout(function () {
+          typingElement.classList.add("typing-effect-animation");
+        }, 1000);
+      });
     </script>
   </body>
 </html>

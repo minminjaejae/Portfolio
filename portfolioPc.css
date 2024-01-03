@@ -8,6 +8,34 @@
     position: relative;
     margin-bottom: 300px;
   }
+  .typing-effect {
+    opacity: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #000; /* 텍스트가 치는 듯한 효과를 위한 가상 테두리 추가 */
+  }
+  .typing-effect-animation {
+    animation: typing 2s steps(40, end), blink-caret 0.5s step-end infinite;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #999;
+    }
+  }
   header ul {
     position: fixed;
     list-style: none;
@@ -38,6 +66,7 @@
     font-size: 8rem;
     color: #333;
     margin-left: 200px;
+    margin-top: 200px;
   }
   header p {
     font-size: 2rem;
@@ -46,6 +75,7 @@
     left: 1150px;
     bottom: -35px;
     font-weight: bold;
+    margin: 0 auto;
   }
   header span a {
     text-decoration: none;
@@ -57,6 +87,7 @@
     right: 5vw;
     display: block;
     padding: auto;
+    margin: 0 auto;
   }
   header span a:hover {
     transform: translateX(30px);
@@ -97,15 +128,17 @@
     margin-bottom: 30px;
   }
   main .swiper-slide h2 {
-    font-size: 3.75rem;
+    font-size: 2rem;
+    margin-bottom: 100px;
     color: #333;
   }
   main .swiper-slide p {
     font-size: 1.125rem;
-    font-weight: bold;
     color: #666;
     text-align: left;
-    margin-left: 20px;
+    padding: 1px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
   .ProjectPage {
     position: relative;
@@ -133,7 +166,6 @@
   .ProjectPage .phone {
     width: 300px;
     position: absolute;
-    right: -600px;
   }
 
   .ProjectPage h1 {
@@ -144,38 +176,53 @@
   }
   .ProjectPage .pro1 {
     position: absolute;
-    left: 1200px;
+    left: 70vw;
     transition: 0.5s;
     opacity: 0;
     transform: translateX(100px);
   }
   .ProjectPage .pro1 .phone {
-    right: 700px;
+    right: 550px;
   }
 
   .ProjectPage .pro2 {
     position: absolute;
     top: 1200px;
+    left: 13vw;
+    transition: 0.5s;
+    opacity: 1;
+    transform: translateX(50px);
+  }
+  .ProjectPage .pro2 .phone {
     left: 500px;
   }
 
   .ProjectPage .pro3 {
     position: absolute;
     top: 2100px;
-    left: 1200px;
+    left: 65vw;
+    transition: 0.5s;
+    opacity: 1;
+    transform: translateX(100px);
   }
   .ProjectPage .pro3 .phone {
-    right: 700px;
+    right: 550px;
   }
 
   .ProjectPage .pro4 {
     position: absolute;
     top: 3000px;
+    left: 10vw;
+    transition: 0.5s;
+    opacity: 1;
+    transform: translateX(100px);
+  }
+  .ProjectPage .pro4 .phone {
     left: 500px;
   }
   .view:hover {
-    transform: rotate(30deg);
-    transition: 0.5s;
+    background-color: #1900ff;
+    padding: 20px;
   }
 
   footer {
@@ -187,15 +234,17 @@
     margin-left: 50px;
   }
   footer img {
-    margin-left: 300px;
+    margin-left: 20vw;
     border-radius: 50%;
   }
   footer h2 {
-    font-size: 3rem;
-    font-weight: bold;
+    font-weight: normal;
+    font-size: 1.8rem;
     color: #333;
-    margin-left: 50vw;
+    margin-left: 55vw;
     position: relative;
-    bottom: 20vw;
+    bottom: 300px;
+    margin-bottom: 10px;
+    margin-top: 0;
   }
 }
