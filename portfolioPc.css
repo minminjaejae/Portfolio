@@ -39,33 +39,37 @@
       border-color: #999;
     }
   }
-  header ul {
+  .headercontainer {
+    border-bottom: 1px solid #000;
+    z-index: 9999;
     position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #fff;
+    height: 100px;
+  }
+  .headercontainer ul {
     list-style: none;
     display: flex;
-    flex-direction: row;
     z-index: 9999;
   }
-  header ul li {
-    margin: 20px;
+  .headercontainer ul li {
+    margin: 30px;
   }
-  header ul li a {
+  .headercontainer ul li a {
     text-decoration: none;
     color: #000;
-    font-size: 1.563rem;
-    right: 10px;
+    font-size: 1.3rem;
     z-index: 999;
     display: block;
     font-weight: bold;
+    position: relative;
+    left: 68vw;
   }
-  header ul li a:hover {
+  .headercontainer ul li a:hover {
     border-bottom: 2px solid #333;
   }
-  .headercontainer {
-    display: flex;
-    justify-content: right;
-    margin-right: 20px;
-  }
+
   header h1 {
     font-size: 8rem;
     color: #333;
@@ -143,6 +147,11 @@
     padding: 1px;
     padding-left: 50px;
     padding-right: 50px;
+  }
+  .pro2 .neo1 {
+    width: 700px;
+    position: absolute;
+    left: 28vw;
   }
   .ProjectPage {
     position: relative;
